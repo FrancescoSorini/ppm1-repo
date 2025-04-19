@@ -1,0 +1,132 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin:0;
+    font-family: "Inter", sans-serif;
+    font-size: 12px;
+}
+
+
+header{
+    border: 1px solid #c3c3c3;
+
+    max-width: 1280px;
+    width: 100%;
+    height: 230px;
+    /* position:relative; */
+    margin: 0 auto 10px;
+}
+
+.top-row{
+
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    padding: 12px 0;
+
+    height: 23px;
+}
+
+.top-row-spacing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-row-login{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    height: 23px;
+}
+
+.newspaper-icon{
+    height: 16px;
+}
+
+.top-row-bell-wrapper{
+    display: flex;
+    justify-content: center;
+    min-width: 60px;
+    height: 23px;
+    border-left: 1px solid #c3c3c3;
+    border-right: 1px solid #c3c3c3;
+}
+
+.top-row-bell{
+    position: relative;
+    fill: #005ac7;
+}
+
+@media (min-width: 1024px){
+    .top-row-bell{
+        width: 20px;
+        height: 20px;
+        fill: #0250b0;
+    }
+}
+
+.top-row-bell-counter{
+    position: absolute;
+    top: 0;
+    right: -2px;
+    background-color: red;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1px;
+}
+
+.top-row-bell-counter p{
+    color: #fff;
+    font-size: 7px;
+}
+
+.top-row-login-button{
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    color: #1b3967;
+    font-size: inherit;
+    text-transform: inherit;
+    font-weight: 500;
+    font-family: Inter, sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+@media (min-width:768px){
+    .top-row-login-button{
+        color: #1b3967;
+        font-weight: 700;
+        font-size: 13px;
+        min-width: 69px;
+    }
+}
+@media (min-width: 768px) {
+    .top-row-login-button>span {
+        display: block;
+    }
+}
+
+
+.user-icon{
+    width: 18px;
+    height: 18px;
+}
+
+.prova{
+    background-color: lightblue;
+    max-width: 1280px;
+    width: 100%;
+    height: 230px;
+}
+
