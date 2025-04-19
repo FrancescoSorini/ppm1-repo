@@ -189,6 +189,26 @@ header{
     border-radius: 100%;
 }
 
+.trending-topics-row{
+    margin-top: 1rem;
+    background: #f5f8fb;
+    padding: .75rem 1rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.trending-topics-row a{
+    font-size: 13px;
+    color: #005ac7;
+    font-weight: 600;
+    max-width: 16.6666666667%;
+    /*white-space: nowrap;
+    overflow-x: hidden;
+    text-overflow: ellipsis;*/
+    text-decoration: none;
+}
+
 
 .prova{
     background-color: lightblue;
