@@ -11,7 +11,6 @@ body{
 
 
 header{
-    border: 1px solid #c3c3c3;
 
     max-width: 1280px;
     width: 100%;
@@ -198,6 +197,8 @@ header{
     gap: 2rem;
 }
 
+
+/* TRENDING TOPICS STYLES */
 .trending-topics-row a{
     font-size: 13px;
     color: #005ac7;
@@ -207,6 +208,114 @@ header{
     overflow-x: hidden;
     text-overflow: ellipsis;*/
     text-decoration: none;
+}
+
+
+/* NAVIGATION ROW STYLES */
+.navigation-row{
+    position: relative;
+}
+
+.navigation-row-list{
+    height: 3rem;
+    display: flex;
+    border-top: 1px solid #e1e1e1;
+    background: #f5f8fb;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    max-height: 40px;
+}
+
+.navigation-row-list li:first-child>button{
+    border-left: 0;
+}
+
+@media (min-width: 768px){
+    .navigation-row-list{
+        max-height: 37px;
+    }
+}
+
+.navigation-row-item{
+    flex: 1 1;
+}
+
+@media (min-width: 1024px){
+    .navigation-row-search{
+        min-width: 12rem;
+    }
+}
+
+
+.navigation-row-list li button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+    width: 100%;
+    padding: .825rem;
+    gap: .25rem;
+
+    border: none;
+    border-left: 1px solid #e1e1e1;
+    background-color: transparent;
+    cursor: pointer;
+
+    color: #1b3967;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@media (min-width: 768px){
+    .navigation-row-list li button{
+        padding: .825rem 1rem;
+        gap: .5rem;
+        min-width: 10rem;
+    }
+}
+
+.navigation-row-item-button .arrow-icon{
+    transition: all 0.3s ease;
+}
+
+.navigation-row-item-button:hover .arrow-icon{
+    transform: rotate(180deg);
+}
+
+.navigation-row-item-button>span{
+    background: #db0049;
+    height: 8px;
+    width: 8px;
+    border-radius: 100%;
+}
+
+@media (min-width: 1024px){
+    .navigation-row-search{
+        min-width: 12rem;
+    }
+}
+
+@media (min-width: 1024px){
+    .navigation-row-search button{
+        justify-content: flex-start !important;
+    }
+}
+
+@media (min-width: 1024px){
+    .navigation-row-search span{
+        display: block;
+        text-transform: none;
+        color: #1b3967;
+        font-weight: 500;
+        font-size: 12px;
+    }
+}
+
+.search-icon{
+    height: 20px;
 }
 
 
