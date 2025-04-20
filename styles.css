@@ -252,7 +252,7 @@ header{
 }
 
 
-.navigation-row-list li button{
+.navigation-row-item-button{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -289,7 +289,7 @@ header{
     transform: rotate(180deg);
 }
 
-.navigation-row-item-button>span{
+.ultim-ora-span{
     background: #db0049;
     height: 8px;
     width: 8px;
@@ -392,9 +392,12 @@ header{
 .dropdown-close{
     display: flex;
     justify-content: flex-end;
+
+    max-height: 19px;
+    height: 100%;
 }
 
-.dropdown-close>button{
+.dropdown-close>button{   /* Non deve ereditare stile navigation-row-list li button */
     border: none;
     background-color: transparent;
     padding: 0;
