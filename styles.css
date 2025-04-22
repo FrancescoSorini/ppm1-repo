@@ -11,13 +11,13 @@ body{
 
 
 header{
-
-    max-width: 1280px;
+    max-width: 1024px;
     width: 100%;
     height: 230px;
-    /* position:relative; */
+    position:relative;
     margin: 0 auto 10px;
 }
+
 
 
 /* TOP ROW STYLES */
@@ -188,6 +188,7 @@ header{
     border-radius: 100%;
 }
 
+/* TRENDING TOPICS STYLES */
 .trending-topics-row{
     margin-top: 1rem;
     background: #f5f8fb;
@@ -198,15 +199,15 @@ header{
 }
 
 
-/* TRENDING TOPICS STYLES */
+
 .trending-topics-row a{
     font-size: 13px;
     color: #005ac7;
     font-weight: 600;
     max-width: 16.6666666667%;
-    /*white-space: nowrap;
+    white-space: nowrap;
     overflow-x: hidden;
-    text-overflow: ellipsis;*/
+    text-overflow: ellipsis;
     text-decoration: none;
 }
 
@@ -274,7 +275,7 @@ header{
 }
 
 @media (min-width: 768px){
-    .navigation-row-list li button{
+    .navigation-row-item-button{
         padding: .825rem 1rem;
         gap: .5rem;
         min-width: 10rem;
@@ -289,7 +290,7 @@ header{
     transform: rotate(180deg);
 }
 
-.ultim-ora-span{
+.latest-span{
     background: #db0049;
     height: 8px;
     width: 8px;
@@ -302,9 +303,17 @@ header{
     }
 }
 
+@media (max-width: 1024px){
+    .navigation-row-search{
+        display:none;
+    }
+}
+
+
 @media (min-width: 1024px){
     .navigation-row-search button{
         justify-content: flex-start !important;
+
     }
 }
 
@@ -322,7 +331,12 @@ header{
     height: 20px;
 }
 
-.navigation-row-viewport{
+
+/* DROPDOWN MENU STYLES */
+
+.viewport-cities,
+.viewport-menu,
+.viewport-specials{
     display: none;
     position: absolute;
     z-index: 100;
@@ -332,12 +346,13 @@ header{
     perspective: 2000px;
 }
 
-.navigation-row-item-cities:hover .navigation-row-viewport {
+.navigation-row-item-cities:hover .viewport-cities{
     display: flex; /* Mostra il contenuto quando si passa sopra */
 }
 
 @media (min-width: 768px){
-    .navigation-row-viewport{
+    .viewport-cities,
+    .viewport-menu{
         top: 100%;
     }
 }
@@ -346,17 +361,10 @@ header{
     position: relative;
     transform-origin: top center;
     width: 100%;
-    height: 513px;
     background-color: #fff;
-
     transition: width, height, .3s ease;
+}
 
-}
-@media (min-width: 768px){
-    .dropdown-dR4Wt{
-        border: 1px solid #e1e1e1;
-    }
-}
 
 .dropdown-VFYt7{
     position: absolute;
@@ -364,12 +372,13 @@ header{
     left: 0;
     width: 100%;
     padding: 1.5rem 1rem;
-
-    max-width: 100%; /* Limita la larghezza al 100% del contenitore genitore */
-    max-height: 100%; /* Limita l'altezza al 100% del contenitore genitore */
-
+    max-width: 100%;
     box-sizing: border-box; /* Include padding e bordi nelle dimensioni */
-
+}
+@media (min-width: 768px) {
+    .dropdown-VFYt7{
+        border: 1px solid #e1e1e1;
+    }
 }
 @media (min-width: 1024px) {
     .dropdown-VFYt7 {
@@ -392,9 +401,6 @@ header{
 .dropdown-close{
     display: flex;
     justify-content: flex-end;
-
-    max-height: 19px;
-    height: 100%;
 }
 
 .dropdown-close>button{   /* Non deve ereditare stile navigation-row-list li button */
@@ -450,7 +456,7 @@ header{
     }
 }
 
-.dropdown-cities a{
+.dropdown-list a{
     color: #1b3967;
     font-size: 13px;
     font-weight: 500;
@@ -464,12 +470,73 @@ header{
 }
 
 @media (min-width: 1024px){
-    .dropdown-cities a{
+    .dropdown-list a{
         padding-bottom: 0;
         justify-content: flex-start;
         border-bottom: none;
     }
 }
 
+.navigation-row-item-menu:hover .viewport-menu{
+    display: flex; /* Mostra il contenuto quando si passa sopra */
+}
+
+.dropdown-list{
+    display: grid;
+    grid-gap: 1rem;
+    gap: 1rem;
+}
 
 
+@media (min-width: 768px) {
+    .dropdown-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (min-width: 1024px){
+    .container-teasers{
+        display: grid;
+        grid-gap: 1rem;
+        gap: 1rem;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.dropdown-teasers{
+    display: none;
+}
+@media (min-width: 1024px){
+    .dropdown-teasers{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 2rem;
+        gap: 2rem;
+        border-left: 1px solid #e1e1e1;
+        padding-left: 1rem;
+    }
+}
+
+.dropdown-teasers a{
+    text-decoration: none;
+}
+
+
+.teaser-article-title{
+    color: #575757;
+    font-weight: 600;
+    font-size: 12px;
+    margin: .5rem 0;
+}
+
+.teaser-article-content{
+    color: black;
+    font-size: 13px;
+    margin: 0;
+    font-weight: 500;
+}
+
+.navigation-row-item-specials:hover .viewport-specials{
+    display: flex; /* Mostra il contenuto quando si passa sopra */
+}
