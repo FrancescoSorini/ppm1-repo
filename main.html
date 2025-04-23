@@ -5,6 +5,7 @@
         <title>Tutte le ultime notizie in tempo reale dall'Emilia Romagna e dalle Marche</title>
         <link rel="stylesheet" href="stylesheets/general-styles.css">
         <link rel="stylesheet" href="stylesheets/header-styles.css"> <!-- TODO: Sticky header -->
+        <link rel="stylesheet" href="stylesheets/sticky-header.css">
         <link rel="stylesheet" href="stylesheets/display-styles.css">
 
         <!-- Inter font -->
@@ -19,7 +20,7 @@
 
         <link class="title-icon" rel="icon" href="https://placehold.co/600x400/blue/white">
     </head>
-    <body>
+    <body>           <!-- TODO: Refactor class names differently from inspection tool -->
         <header>
             <div class="top-row">
                 <div class="top-row-logo">
@@ -35,7 +36,6 @@
                                 <p>2</p>
                             </div>
                         </div>
-
                     </div>
                     <button class="top-row-login-button">
                         <img class="user-icon" src="media/user-icon.svg">
@@ -69,9 +69,6 @@
                         </div>
                     </div>
                     <img class="logo-row-right-img" src="media/60x60.svg">
-
-
-
                 </div>
             </div>
             <div class="trending-topics-row">
@@ -81,7 +78,6 @@
                 <a href="#">Maecenas eget</a>
                 <a href="#">facilisis leo</a>
                 <a href="#">Morbi interdum</a>
-
             </div>
             <nav class="navigation-row">
                 <div class="navigation-row-list-wrapper">
@@ -638,6 +634,57 @@
             </nav>
         </header>
 
+        <div id="stickyHeader" class="sticky-header-LxHOi sticky-header-open">   <!-- TODO: scomparsa sticky header -->
+            <div class="sticky-header-content-4oHLA">
+                <div class="sticky-header-main-row">
+                    <div class="sticky-main-row-menu-Zmo2h">
+                        <nav class="sticky-menu-uJ0km">
+                            <div class="sticky-menu-container">
+                                <ul class="sticky-menu-list-qDdaj">
+                                    <li>
+                                        <button>
+                                            Menu
+                                            <img class="sticky-hamburger" src="media/sticky-menu-hamburger.svg">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="sticky-menu-viewport"></div> <!-- TODO: dropdown menu sticky header -->
+                        </nav>
+                        <span class="sticky-main-row-divider"></span>
+                        <a href="#" >
+                            <img src="media/search-icon.svg">
+                        </a>
+                    </div> <!-- TODO: dropdown menu sticky header -->
+                    <div>
+                        <a href="#" class="sticky-logo">
+                            <img src="media/256x40.svg">
+                        </a>
+                    </div>
+                    <div class="sticky-main-row-toolbar">
+                        <a href="#" class="sticky-buy-newspaper">Acquista il giornale</a>
+                        <span class="sticky-main-row-divider"></span>
+                        <a href="#">
+                            <div class="sticky-bell">
+                                <img src="media/notification-bell-icon.svg">
+                                <div class="sticky-bell-counter">
+                                    <p>2</p>
+                                </div>
+                            </div>
+                        </a>
+                        <span class="sticky-main-row-divider"></span>
+                        <div class="sticky-login">
+                            <button class="sticky-login-button">
+                                <img class="sticky-user-icon" src="media/user-icon.svg">
+                                <span>Accedi</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="display-slots-container">
             <div class="display-slots">
                 <div class="display-trend-news">
@@ -702,6 +749,7 @@
                     </a>
                 </div>
             </div>
-        </div>
+        </div>  <!-- vetrina -->
+
     </body>
 </html>
