@@ -18,7 +18,7 @@
 .display-trend-list{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    grid-gap: 8px;
+    /* grid-gap: 8px; */
     gap: 8px;
 }
 
@@ -45,6 +45,12 @@
     margin-bottom: 12px;
 }
 
+.display-trend-item-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 .display-trend-item-icon{
     position: absolute;
     right: 4px;
@@ -58,4 +64,10 @@
     line-height: 17px;
     margin-top: 12px;
     color: #383838 !important;
+}
+
+@media(max-width: 1024px) {
+    .display-slots-container{
+        padding-inline: 16px;
+    }
 }
