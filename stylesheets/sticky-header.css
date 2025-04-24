@@ -48,7 +48,9 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         height: auto;
-        padding: 14px 16px;
+        padding-top: 14px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 }
 
@@ -274,6 +276,24 @@
     height: 100%;
 }
 
+.sticky-menu-hover-area{
+}
+
+
 .sticky-menu-hover-area:hover .sticky-menu-viewport-2yRoX{
     display: flex;
+}
+
+
+/* CSS per Javascript */
+#stickyHeader {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+#stickyHeader.visible {
+    transform: translateY(0);
 }
