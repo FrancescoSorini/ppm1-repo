@@ -152,10 +152,6 @@
     flex-direction: row;
 }
 
-.card-card-live a{
-    text-decoration: none;
-}
-
 .live-button{
     height: 28px;
 }
@@ -172,6 +168,9 @@
     align-items: center;
     gap: 8px;
 
+}
+
+.card-card-category-vaschetta{
     margin-left: 10px;
 }
 
@@ -190,6 +189,10 @@
 
 .card-card-title{
     color: #2d2e2f;
+}
+
+.card-card-title:hover{
+    color: #525252;
 }
 
 .card-card-author{
@@ -220,7 +223,7 @@
     font-size: 16px;
     color: #505050;
     margin-bottom: 5px;
-    text-decoration: none;
+
 }
 
 .card-card-related-longtext a span{
@@ -242,24 +245,90 @@
     .slots-contro-apertura{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        /*grid-gap: 14px;*/
+        grid-gap: 14px;
         gap: 14px;
-        /*padding-bottom: 15px;*/
+        padding-bottom: 15px;
     }
 }
 
 .slots-contro-apertura-item{
-    /*border-bottom: #e1e1e1;*/
+    border-bottom: #e1e1e1;
     padding-bottom: 15px;
-    /*margin-bottom: 15px; */
+    margin-bottom: 15px;
+    box-sizing: border-box;
 }
 
 @media (min-width: 768px) {
     .slots-contro-apertura-item{
         height: 100%;
         padding-right: 14px;
-        border-right: #e1e1e1;
+        border-right: 1px solid #e1e1e1;
         border-bottom: none;
         margin-bottom: 15px;
+    }
+}
+
+.slots-contro-apertura-item:last-child{
+    border-bottom: unset;
+    padding-bottom: 0;
+}
+
+@media (min-width: 768px) {
+    .slots-contro-apertura-item:last-child {
+        margin-right: -14px;
+        border-right: unset;
+    }
+}
+
+.card-card-content{
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+.card-card-N6Dsn .card-card-content{
+    font-size: 17px;
+    line-height: 20px;
+}
+
+.card-card-N6Dsn h3{
+    font-size: 22px;
+    line-height: 26px;
+}
+
+.card-card-content p{
+    line-height: inherit;
+    font-size: inherit;
+    font-family: inherit;
+    color: #505050;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+.slots-contro-apertura-subitem-v0YQ1 {
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+@media (min-width: 768px) {
+    .slots-contro-apertura-subitem-v0YQ1 {
+        padding: 15px 0;
+        border-bottom: 1px solid #e1e1e1;
+    }
+    .slots-contro-apertura-subitem-v0YQ1:last-child {
+        border-bottom: unset;
+        padding-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .slots-contro-apertura>:last-child>* {
+        margin-right: 0;
+        border-right: unset;
+    }
+}
+
+@media (min-width: 768px) {
+    .slots-contro-apertura-subitem-v0YQ1:first-child {
+        padding-top: 0;
     }
 }

@@ -186,7 +186,6 @@
     white-space: nowrap;
     overflow-x: hidden;
     text-overflow: ellipsis;
-    text-decoration: none;
 }
 
 .small-screen-logo-row{
@@ -524,7 +523,6 @@
     align-items: center;
     justify-content: space-between;
     gap: .5rem;
-    text-decoration: none;
 }
 
 .navigation-row-item-menu:hover .viewport-menu{
@@ -541,9 +539,6 @@
     display: none;
 }
 
-.dropdown-teasers a{
-    text-decoration: none;
-}
 
 .teaser-article-title{
     color: #575757;
@@ -620,9 +615,6 @@
     gap: 6px;
 }
 
-.dropdown-latest-list a{
-    text-decoration: none;
-}
 
 @media (min-width: 768px){
     .viewport-cities,
