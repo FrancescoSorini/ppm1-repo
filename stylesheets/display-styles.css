@@ -66,6 +66,12 @@
     color: #383838 !important;
 }
 
+@media(max-width: 768px){
+    .display-slots-container{
+        display: none;
+    }
+}
+
 @media(max-width: 1024px) {
     .display-slots-container{
         padding-inline: 16px;

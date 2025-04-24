@@ -1,10 +1,8 @@
 /* TOP ROW STYLES */
 .top-row{
-
     display: grid;
     grid-template-columns: 200px 1fr 200px;
     padding: 12px 0;
-
     height: 23px;
 }
 
@@ -46,13 +44,12 @@
     right: -2px;
     background-color: red;
     border-radius: 50%;
-    width: 12px;
-    height: 12px;
+    width: 10px;
+    height: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1px;
-    font-family: system-ui;
 }
 
 .top-row-bell-counter p{
@@ -191,6 +188,123 @@
     text-overflow: ellipsis;
     text-decoration: none;
 }
+
+.small-screen-logo-row{
+    display: none;
+}
+
+@media (max-width: 768px){
+    .top-row,
+    .logo-row,
+    .trending-topics-row{
+        display: none;
+    }
+    .small-screen-logo-row{
+        height: 53px;
+        background: #005ac7;
+        padding: .825rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .small-screen-logo-row-toolbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        gap: 5px;
+        align-items: flex-end;
+    }
+    .small-toolbar1{
+        padding: 0 8px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        width: 100%;
+        gap: 6px;
+    }
+    .small-toolbar-bell{
+        position: relative;
+    }
+    .small-toolbar-bell img{
+        fill: #ffffff;
+        height: 18px;
+        width: 18px;
+    }
+    .small-toolbar-divider{
+        width: 1px;
+        height: 14px;
+        background: #fff;
+    }
+    .small-toolbar-user{
+        color: #ffffff;
+    }
+    .small-toolbar-login{
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        cursor: pointer;
+        color: #ffffff;
+        font-family: Inter, sans-serif;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+    }
+    .small-toolbar-login img{
+        width: 18px;
+        height: 18px;
+    }
+    .small-toolbar-subscribe{
+        background: #4f9eff;
+        color: #fff;
+        border-radius: 8px;
+        padding: .25rem .875rem;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* NAVIGATION ROW STYLES */
