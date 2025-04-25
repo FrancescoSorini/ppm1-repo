@@ -1,0 +1,95 @@
+.footer-footer{
+    position: relative;
+    background-color: #005ac7;
+    color: #ffffff;
+    z-index: 10;
+}
+
+.footer-footer-content{
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    padding: 150px 15px 15px;
+}
+
+@media (min-width: 768px) {
+    .footer-footer-content{
+        padding: 40px 20px 40px 158px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-footer-content{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.footer-footer-info{
+    background-color: #0250b0;
+}
+
+.footer-footer-qn-logo{
+    position: absolute;
+    width: 158px;
+    height: 147px;
+    z-index: 0;
+    top: 0;
+    left: 0;
+}
+
+.footer-footer-main{
+    z-index: 10;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 1024px) {
+    .footer-footer-main{
+        margin-left: 20px;
+    }
+}
+
+.footer-footer-links{
+    font-size: 12px;
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .footer-footer-links{
+        display: grid;
+        grid-column-gap: 32px;
+        column-gap: 32px;
+        grid-auto-columns: max-content;
+        grid-auto-flow: column;
+    }
+}
+
+.footer-footer-logo{
+    display: flex;
+    align-items: center;
+}
+
+.footer-footer-text,
+.footer-footer-text p strong{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 12px;
+    font-family: system-ui;
+}
+
+
+
+.footer-footer-newspaper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px 20px;
+}
+
+@media (min-width: 768px) {
+    .footer-footer-newspaper{
+        justify-content: start;
+    }
+}
