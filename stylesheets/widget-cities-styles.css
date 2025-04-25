@@ -110,12 +110,6 @@
     object-fit: cover;
 }
 
-@media(min-width: 1024px){
-    .slot-widget-cities-mIBL9{
-        max-width: 944px;
-    }
-}
-
 .slot-widget-cities-slider-wrapper{
     width: 33%;
 }
@@ -149,6 +143,7 @@
     min-height: 120px;
     height: auto !important;
 }
+
 .slot-widget-cities-slider-item-content{
     display: flex;
     gap: 16px;
@@ -218,7 +213,8 @@
 
 @media screen and (max-width: 820px) {
     .slot-widget-cities-mIBL9{
-        padding:15px
+        padding:15px;
+        box-sizing: border-box;
     }
 
     .slot-widget-cities-title{
@@ -245,5 +241,11 @@
         justify-content: center;
         gap: 15px;
         margin-top: 32px
+    }
+}
+
+@media(min-width: 1024px){
+    .slot-widget-cities-mIBL9{
+        max-width: 944px;
     }
 }
