@@ -18,10 +18,8 @@
 .display-trend-list{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    /* grid-gap: 8px; */
     gap: 8px;
 }
-
 
 .display-trend-news-text{
     font-family: "Roboto Condensed", sans-serif;
@@ -32,7 +30,6 @@
 
 .display-trend-item{
     position: relative;
-    /* height: -moz-fit-content; */
     height: fit-content;
 }
 

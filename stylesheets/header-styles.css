@@ -133,12 +133,6 @@
     font-size: 13px;
     font-weight: 600;
     color: #1b3967;
-    /*overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    line-clamp: 2;
-    -webkit-box-orient: vertical;*/
 }
 
 .logo-row-left-content,
@@ -262,49 +256,7 @@
         font-weight: 700;
     }
 
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* NAVIGATION ROW STYLES */
 .navigation-row{
@@ -434,24 +386,24 @@
 }
 
 .navigation-row-item-cities:hover .viewport-cities{
-    display: flex; /* Mostra il contenuto quando si passa sopra */
+    display: flex;
 }
 
-.dropdown-dR4Wt{
+.dropdown-1{
     position: relative;
     transform-origin: top center;
     width: 100%;
     transition: width, height, .3s ease;
 }
 
-.dropdown-VFYt7{
+.dropdown-2{
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     padding: 1.5rem 1rem;
     max-width: 100%;
-    box-sizing: border-box; /* Include padding e bordi nelle dimensioni */
+    box-sizing: border-box;
     background-color: #fff;
 }
 
@@ -472,7 +424,7 @@
     justify-content: flex-end;
 }
 
-.dropdown-close>button{   /* Non deve ereditare stile navigation-row-list li button */
+.dropdown-close>button{
     border: none;
     background-color: transparent;
     padding: 0;
@@ -526,7 +478,7 @@
 }
 
 .navigation-row-item-menu:hover .viewport-menu{
-    display: flex; /* Mostra il contenuto quando si passa sopra */
+    display: flex;
 }
 
 .dropdown-list{
@@ -555,11 +507,11 @@
 }
 
 .navigation-row-item-specials:hover .viewport-specials{
-    display: flex; /* Mostra il contenuto quando si passa sopra */
+    display: flex;
 }
 
 .navigation-row-item-latest:hover .viewport-latest{
-    display: flex; /* Mostra il contenuto quando si passa sopra */
+    display: flex;
 }
 
 .dropdown-latest-list{
@@ -624,7 +576,7 @@
         top: 100%;
     }
 
-    .dropdown-VFYt7{
+    .dropdown-2{
         border: 1px solid #e1e1e1;
     }
 
@@ -638,7 +590,7 @@
 }
 
 @media (min-width: 1024px) {
-    .dropdown-VFYt7 {
+    .dropdown-2 {
         height: unset;
     }
 
