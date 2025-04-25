@@ -3,12 +3,13 @@
     background-color: #005ac7;
     color: #ffffff;
     z-index: 10;
+    margin: 0;
 }
 
 .footer-footer-content{
     width: 100%;
     max-width: 1024px;
-    margin: 0 auto;
+    margin: 0 248px;
     position: relative;
     padding: 150px 15px 15px;
 }
@@ -22,7 +23,6 @@
 @media (min-width: 1024px) {
     .footer-footer-content{
         display: flex;
-        justify-content: space-between;
     }
 }
 
@@ -93,3 +93,105 @@
         justify-content: start;
     }
 }
+
+.footer-footer-links-title{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    opacity: .6;
+    text-transform: uppercase;
+    font-family: system-ui;
+}
+
+@media (min-width: 1280px) {
+    .footer-footer-links-column{
+        grid-template-rows: auto;
+        grid-template-columns: auto;
+        grid-auto-flow: row;
+    }
+}
+
+.footer-footer-links-column{
+    display: grid;
+    column-gap: 32px;
+}
+
+.footer-footer-links-column a {
+    text-transform: capitalize;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-family: system-ui;
+}
+
+.footer-footer-links-column a:hover {
+    text-decoration: underline;
+}
+
+.footer-footer-info-content{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 11px;
+    padding: 10px 15px;
+}
+
+@media (min-width: 768px) {
+    .footer-footer-info-content{
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-footer-copyright{
+        margin-bottom: 0;
+    }
+}
+
+.footer-footer-copyright{
+    color: #ffffff;
+    opacity: .33;
+    margin-top: 0;
+    font-family: system-ui;
+    font-size: 11px;
+}
+
+.footer-footer-company-info{
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+}
+
+.footer-footer-company-info a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 11px;
+    font-family: system-ui;
+}
+
+.footer-footer-company-info button {
+    border: none;
+    background-color: transparent;
+    font-family: system-ui;
+    padding: 0;
+    cursor: pointer;
+    color: inherit;
+    font-size: 11px;
+    text-transform: inherit;
+    font-weight: inherit;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
