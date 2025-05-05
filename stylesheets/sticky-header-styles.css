@@ -99,22 +99,24 @@
 
 .sticky-bell-counter{
     position: absolute;
-    top: 0;
-    right: -2px;
-    background-color: red;
+    top: -2px;
+    right: -3px;
+    background-color: #db0049;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1px;
     font-family: system-ui;
+    border: 1px solid #fff;
 }
 
 .sticky-bell-counter p{
-    color: #fff;
-    font-size: 7px;
+    color: #ffffff;
+    font-size: 8px;
+    font-weight: bold;
 }
 
 .sticky-login-button{

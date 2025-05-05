@@ -42,19 +42,21 @@
     position: absolute;
     top: 0;
     right: -2px;
-    background-color: red;
+    background-color: #db0049;
     border-radius: 50%;
-    width: 10px;
-    height: 10px;
+    width: 12px;
+    height: 12px;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1px;
+    border: 1px solid #fff;
 }
 
 .top-row-bell-counter p{
-    color: #fff;
-    font-size: 7px;
+    color: #ffffff; /* Testo bianco per contrasto */
+    font-size: 8px; /* Dimensione leggermente aumentata */
+    font-weight: bold;
 }
 
 .top-row-login-button{

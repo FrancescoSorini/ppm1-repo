@@ -62,7 +62,8 @@
 .footer-footer-links-title{
     margin-top: 5px;
     margin-bottom: 5px;
-    opacity: .6;
+    color: #e0e0e0;
+    opacity: 1;
     text-transform: uppercase;
     font-family: system-ui;
 }
@@ -93,8 +94,8 @@
 }
 
 .footer-footer-copyright{
-    color: #ffffff;
-    opacity: .33;
+    color: #e0e0e0;
+    opacity: 1;
     margin-top: 0;
     font-family: system-ui;
     font-size: 11px;
